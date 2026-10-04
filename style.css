@@ -1,0 +1,416 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background: #f4f4f4;
+    color: #222;
+}
+
+.header {
+    width: 100%;
+    min-height: 120px;
+    background: linear-gradient(90deg, #4b0082, #0000ff, #ff00ff);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 70px;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+}
+
+.logo h1 {
+    color: white;
+    font-size: 38px;
+    letter-spacing: 5px;
+    text-shadow: 5px 5px 10px black;
+}
+
+.logo p {
+    color: yellow;
+    font-size: 18px;
+}
+
+nav {
+    display: flex;
+    gap: 35px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: 700;
+    transition: all 1s ease;
+}
+
+nav a:hover {
+    color: yellow;
+    font-size: 22px;
+    transform: rotate(5deg);
+}
+
+.hero {
+    min-height: 850px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 100px;
+    background: linear-gradient(120deg, #ff9a9e, #fad0c4, #a18cd1);
+}
+
+.hero-content {
+    width: 45%;
+    animation: move 5s infinite;
+}
+
+.hero-content h1 {
+    font-size: 70px;
+    color: #4b0082;
+    text-shadow: 5px 5px 10px white;
+}
+
+.hero-content p {
+    margin-top: 30px;
+    font-size: 22px;
+    line-height: 2;
+}
+
+button {
+    margin-top: 30px;
+    padding: 18px 40px;
+    border: none;
+    border-radius: 50px;
+    background: linear-gradient(45deg, red, blue);
+    color: white;
+    font-size: 20px;
+    cursor: pointer;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+    transition: all 1s;
+}
+
+button:hover {
+    transform: scale(1.3) rotate(5deg);
+}
+
+.hero-image {
+    width: 45%;
+}
+
+.hero-image img {
+    width: 100%;
+    height: 600px;
+    object-fit: cover;
+    border-radius: 50px;
+    box-shadow: 20px 20px 50px black;
+}
+
+.about {
+    padding: 120px 80px;
+    background: white;
+}
+
+.about h2,
+.courses h2,
+.students h2,
+.gallery h2,
+.events h2,
+.contact h2 {
+    text-align: center;
+    font-size: 55px;
+    margin-bottom: 80px;
+    color: #4b0082;
+}
+
+.about-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 100px;
+}
+
+.about-text {
+    width: 50%;
+}
+
+.about-text p {
+    font-size: 20px;
+    line-height: 2.2;
+    margin-bottom: 30px;
+}
+
+.about-image {
+    width: 50%;
+}
+
+.about-image img {
+    width: 100%;
+    height: 600px;
+    object-fit: cover;
+    border-radius: 40px;
+}
+
+.courses {
+    padding: 120px 70px;
+    background: #eeeeee;
+}
+
+.course-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 50px;
+}
+
+.course-card {
+    background: white;
+    padding: 25px;
+    border-radius: 30px;
+    box-shadow: 0 20px 40px rgba(0,0,0,0.3);
+    transition: all 2s;
+}
+
+.course-card:hover {
+    transform: translateY(-40px) rotate(3deg) scale(1.05);
+}
+
+.course-card img {
+    width: 100%;
+    height: 350px;
+    object-fit: cover;
+    border-radius: 20px;
+}
+
+.course-card h3 {
+    font-size: 27px;
+    margin-top: 25px;
+}
+
+.course-card p {
+    margin-top: 20px;
+    line-height: 1.8;
+}
+
+.students {
+    padding: 120px 80px;
+    background: linear-gradient(120deg, #89f7fe, #66a6ff);
+}
+
+.student-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 40px;
+}
+
+.student-card {
+    background: rgba(255,255,255,0.8);
+    padding: 50px;
+    text-align: center;
+    border-radius: 40px;
+    box-shadow: 0 20px 50px black;
+    animation: floating 4s infinite;
+}
+
+.student-card h3 {
+    font-size: 25px;
+}
+
+.student-card p {
+    margin-top: 15px;
+}
+
+.gallery {
+    padding: 120px 70px;
+    background: white;
+}
+
+.gallery-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 40px;
+}
+
+.gallery-container img {
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+    border-radius: 30px;
+    box-shadow: 10px 10px 30px black;
+    transition: all 2s;
+}
+
+.gallery-container img:hover {
+    transform: scale(1.2) rotate(5deg);
+}
+
+.events {
+    padding: 120px 70px;
+    background: #ddd;
+}
+
+.event-container {
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+}
+
+.event {
+    background: white;
+    padding: 60px;
+    width: 30%;
+    text-align: center;
+    border-radius: 40px;
+    box-shadow: 0 20px 40px rgba(0,0,0,0.4);
+}
+
+.event h3 {
+    font-size: 30px;
+}
+
+.event p {
+    margin-top: 20px;
+    font-size: 20px;
+}
+
+.contact {
+    padding: 120px 70px;
+    background: linear-gradient(120deg, #fbc2eb, #a6c1ee);
+}
+
+form {
+    max-width: 800px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+input,
+textarea {
+    width: 100%;
+    padding: 25px;
+    border: 3px solid purple;
+    border-radius: 20px;
+    font-size: 18px;
+    box-shadow: 10px 10px 20px rgba(0,0,0,0.3);
+}
+
+textarea {
+    height: 250px;
+}
+
+form button {
+    width: 250px;
+    margin: auto;
+}
+
+footer {
+    background: #111;
+    color: white;
+    text-align: center;
+    padding: 80px;
+}
+
+footer h2 {
+    font-size: 45px;
+}
+
+footer p {
+    margin-top: 20px;
+}
+
+.social {
+    margin-top: 30px;
+}
+
+.social a {
+    color: white;
+    margin: 20px;
+    text-decoration: none;
+    font-size: 20px;
+}
+
+@keyframes move {
+    0% {
+        transform: translateX(0);
+    }
+
+    25% {
+        transform: translateX(30px);
+    }
+
+    50% {
+        transform: translateX(-30px);
+    }
+
+    75% {
+        transform: translateY(30px);
+    }
+
+    100% {
+        transform: translateX(0);
+    }
+}
+
+@keyframes floating {
+    0% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-30px);
+    }
+
+    100% {
+        transform: translateY(0);
+    }
+}
+
+@media(max-width:900px) {
+
+    .header {
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    nav {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .hero {
+        flex-direction: column;
+    }
+
+    .hero-content {
+        width: 100%;
+    }
+
+    .hero-image {
+        width: 100%;
+        margin-top: 50px;
+    }
+
+    .course-container {
+        grid-template-columns: repeat(2,1fr);
+    }
+
+    .student-grid {
+        grid-template-columns: repeat(2,1fr);
+    }
+
+    .gallery-container {
+        grid-template-columns: repeat(2,1fr);
+    }
+
+    .event-container {
+        flex-direction: column;
+    }
+
+    .event {
+        width: 100%;
+    }
+}

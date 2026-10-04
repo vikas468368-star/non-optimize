@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My College Student Portal</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.30.1/moment.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/lodash@4.17.21/lodash.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+</head>
+
+<body>
+
+<header class="header">
+    <div class="logo">
+        <h1>MY COLLEGE</h1>
+        <p>Student Portal</p>
+    </div>
+
+    <nav>
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#courses">Courses</a>
+        <a href="#students">Students</a>
+        <a href="#gallery">Gallery</a>
+        <a href="#contact">Contact</a>
+    </nav>
+</header>
+
+<section id="home" class="hero">
+
+    <div class="hero-content">
+        <h1>Welcome To My College</h1>
+
+        <p>
+            Welcome to our beautiful college website.
+            Here you can find information about courses,
+            students, campus activities, events and much more.
+        </p>
+
+        <button onclick="showMessage()">Explore Now</button>
+    </div>
+
+    <div class="hero-image">
+        <img src="https://images.unsplash.com/photo-1564981797816-1043664bf78d?auto=format&fit=crop&w=4000&q=100">
+    </div>
+
+</section>
+
+<section id="about" class="about">
+
+    <h2>About Our College</h2>
+
+    <div class="about-container">
+
+        <div class="about-text">
+
+            <p>
+                Our college is committed to providing high quality education
+                and developing students for the future. We provide modern
+                classrooms, laboratories, libraries, sports facilities and
+                many extracurricular activities.
+            </p>
+
+            <p>
+                Students can participate in cultural activities, technical
+                events, sports competitions and various educational programs.
+            </p>
+
+            <p>
+                Our experienced teachers help students develop technical,
+                communication and leadership skills.
+            </p>
+
+        </div>
+
+        <div class="about-image">
+            <img src="https://images.unsplash.com/photo-1523050854058-8df90110c9f1?auto=format&fit=crop&w=4000&q=100">
+        </div>
+
+    </div>
+
+</section>
+
+<section id="courses" class="courses">
+
+    <h2>Our Courses</h2>
+
+    <div class="course-container">
+
+        <div class="course-card">
+            <img src="https://images.unsplash.com/photo-1517694712202-14dd9538aa97?auto=format&fit=crop&w=3000&q=100">
+            <h3>Computer Engineering</h3>
+            <p>Learn programming, software development and computer technologies.</p>
+            <button>Read More</button>
+        </div>
+
+        <div class="course-card">
+            <img src="https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?auto=format&fit=crop&w=3000&q=100">
+            <h3>Mechanical Engineering</h3>
+            <p>Learn machines, manufacturing and mechanical engineering concepts.</p>
+            <button>Read More</button>
+        </div>
+
+        <div class="course-card">
+            <img src="https://images.unsplash.com/photo-1558008258-3256797b43f3?auto=format&fit=crop&w=3000&q=100">
+            <h3>Electrical Engineering</h3>
+            <p>Learn electrical systems, circuits and modern technologies.</p>
+            <button>Read More</button>
+        </div>
+
+        <div class="course-card">
+            <img src="https://images.unsplash.com/photo-1532094349884-543bc11b234d?auto=format&fit=crop&w=3000&q=100">
+            <h3>Civil Engineering</h3>
+            <p>Learn construction, structures and civil engineering techniques.</p>
+            <button>Read More</button>
+        </div>
+
+    </div>
+
+</section>
+
+<section id="students" class="students">
+
+    <h2>Student Information</h2>
+
+    <div class="student-grid">
+
+        <div class="student-card">
+            <h3>Rahul Sharma</h3>
+            <p>Computer Engineering</p>
+            <p>Semester: 5</p>
+            <p>CGPA: 8.7</p>
+        </div>
+
+        <div class="student-card">
+            <h3>Priya Patel</h3>
+            <p>Mechanical Engineering</p>
+            <p>Semester: 4</p>
+            <p>CGPA: 9.1</p>
+        </div>
+
+        <div class="student-card">
+            <h3>Amit Kumar</h3>
+            <p>Electrical Engineering</p>
+            <p>Semester: 6</p>
+            <p>CGPA: 8.4</p>
+        </div>
+
+        <div class="student-card">
+            <h3>Neha Singh</h3>
+            <p>Civil Engineering</p>
+            <p>Semester: 3</p>
+            <p>CGPA: 9.0</p>
+        </div>
+
+    </div>
+
+</section>
+
+<section id="gallery" class="gallery">
+
+    <h2>College Gallery</h2>
+
+    <div class="gallery-container">
+
+        <img src="https://images.unsplash.com/photo-1498243691581-b145c3f54a5a?auto=format&fit=crop&w=4000&q=100">
+
+        <img src="https://images.unsplash.com/photo-1562774053-701939374585?auto=format&fit=crop&w=4000&q=100">
+
+        <img src="https://images.unsplash.com/photo-1541339907198-e08756dedf3f?auto=format&fit=crop&w=4000&q=100">
+
+        <img src="https://images.unsplash.com/photo-1523580846011-d3a5bc25702b?auto=format&fit=crop&w=4000&q=100">
+
+        <img src="https://images.unsplash.com/photo-1519452575417-564c1401ecc0?auto=format&fit=crop&w=4000&q=100">
+
+        <img src="https://images.unsplash.com/photo-1523050854058-8df90110c9f1?auto=format&fit=crop&w=4000&q=100">
+
+    </div>
+
+</section>
+
+<section class="events">
+
+    <h2>Upcoming Events</h2>
+
+    <div class="event-container">
+
+        <div class="event">
+            <h3>Technical Festival</h3>
+            <p>15 October 2026</p>
+            <button onclick="registerEvent('Technical Festival')">
+                Register
+            </button>
+        </div>
+
+        <div class="event">
+            <h3>Sports Day</h3>
+            <p>20 October 2026</p>
+            <button onclick="registerEvent('Sports Day')">
+                Register
+            </button>
+        </div>
+
+        <div class="event">
+            <h3>Cultural Festival</h3>
+            <p>25 October 2026</p>
+            <button onclick="registerEvent('Cultural Festival')">
+                Register
+            </button>
+        </div>
+
+    </div>
+
+</section>
+
+<section id="contact" class="contact">
+
+    <h2>Contact Us</h2>
+
+    <form onsubmit="submitForm(event)">
+
+        <input type="text" id="name" placeholder="Your Name">
+
+        <input type="email" id="email" placeholder="Your Email">
+
+        <input type="text" id="phone" placeholder="Phone Number">
+
+        <textarea id="message" placeholder="Your Message"></textarea>
+
+        <button type="submit">Send Message</button>
+
+    </form>
+
+</section>
+
+<footer>
+
+    <h2>MY COLLEGE</h2>
+
+    <p>
+        © 2026 My College Student Portal.
+        All Rights Reserved.
+    </p>
+
+    <div class="social">
+        <a href="#">Facebook</a>
+        <a href="#">Instagram</a>
+        <a href="#">Twitter</a>
+        <a href="#">YouTube</a>
+    </div>
+
+</footer>
+
+<script src="script.js"></script>
+
+</body>
+</html>
